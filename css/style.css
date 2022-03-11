@@ -1,0 +1,103 @@
+body {
+    background-color: #323132;
+}
+.wrapper {
+    margin: auto;
+    width: 80%;
+    background-color: #fff;
+}
+article {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: #fff;
+}
+ul {
+    margin: auto;
+    width: 65%;
+    display: inline-block;
+}
+ol {
+    margin: auto;
+    width: 65%;
+    display: inline-block;
+}
+.profilePic {
+    width: 30%;
+    border-radius: 60%;
+    display: block;
+    margin-top: -15%;
+}
+.cookiesPic {
+    width:100%;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: -25%;
+}
+.blanketPic {
+    width:30%;
+}
+.knowMe1 {
+    display: flex; /* Learned this css thing called flex which lets me do rows and columns easily */
+    justify-content: space-evenly;
+}
+.knowMe2 {
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3{
+    font-family: Verdana; 
+}
+img:hover {
+    transform: rotate(15deg);
+}
+footer img:hover {
+    transform: rotate(45deg);
+}
+/* Registering a custom font to the font families */
+@font-face {
+    font-family: Sacramento-Regular;
+    src: url('./Sacramento-Regular.ttf');
+}
+.nameWrapper{
+    font-family: Sacramento-Regular; /* Using the custom font in the name wrapper*/
+    text-align: center;
+    font-size: 50pt;
+    margin-top: -5%;
+    color: purple;
+}
+.imageSection img {
+    width: 30%;
+}
+.imageSection img:hover {
+
+}
+.imageSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imageArticle {
+    display:flex;
+    flex-direction: column;
+}
+.sleepyPic {
+    width:30%;
+}
+.contactColumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%; /* Keeps the buttons centered at the bottom and spaced evenly */
+    margin-right: 5%;
+}
+.contactRow {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+.githubLogo {
+    width: 70%;
+}
