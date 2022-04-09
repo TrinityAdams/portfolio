@@ -1,57 +1,78 @@
+/* Apply grey background color to main container */
 body {
     background-color: #323132;
 }
+/* Center align and resize the 'body' portion of content */
 .wrapper {
     margin: auto;
     width: 80%;
     background-color: #fff;
 }
+/* Make sure the text is aligned in the center of the container */
 article {
     text-align: center;
 }
+/* Make sure text is aligned in the center of the container and make the background color of the footer white */
 footer {
     text-align: center;
     background-color: #fff;
 }
+/* Center the unordered list, resize the width of the list container and apply some padding */
 ul {
     margin: auto;
     width: 65%;
-    display: inline-block;
+    padding: 40px 30px 30px 40px;
 }
+/* Center the ordered lists, and resize the width of the list container */
 ol {
     margin: auto;
     width: 65%;
-    display: inline-block;
 }
+/* Add some space between the top images and my name */
+.upperImages {
+    padding-bottom: 30px;
+}
+/* Adjust the width and height, make it circular and make sure it shows on top for the cookies hover event */
 .profilePic {
-    width: 30%;
+    width: 20%;
+    height: 30%;
     border-radius: 60%;
-    display: block;
-    margin-top: -15%;
+    display: flex;
+    margin-top: -10%;
+    z-index: 1;
+    position: absolute;
 }
+/* Stretch to the full width of the image, slightly round the edges and position it from the top, make sure it stays beneath the profile pic with z-index */
 .cookiesPic {
     width:100%;
     border-radius: 10%;
     margin: auto;
-    margin-top: -25%;
+    margin-top: -35%;
+    z-index: -1;
 }
+/* Adjust the width of the image */
 .blanketPic {
     width:30%;
 }
+/* Learned this css thing called flex which lets me do rows and columns easily, space-evenly puts even space between children elements */
 .knowMe1 {
-    display: flex; /* Learned this css thing called flex which lets me do rows and columns easily */
+    display: flex; 
     justify-content: space-evenly;
 }
+/* Same situation here with flex, and flex-direction can be row or column */
 .knowMe2 {
     display: flex;
     flex-direction: column;
 }
+/* I wanted a different font for my header text */
 h1, h2, h3{
     font-family: Verdana; 
 }
+/* If you hover over an image it turns a little bit */
 img:hover {
     transform: rotate(15deg);
 }
+/* If you hover over the footer images they rotate */
 footer img:hover {
     transform: rotate(45deg);
 }
@@ -60,37 +81,46 @@ footer img:hover {
     font-family: Sacramento-Regular;
     src: url('./Sacramento-Regular.ttf');
 }
+/* This is where I assign a custom font and adjust its size and color */
 .nameWrapper{
     font-family: Sacramento-Regular; /* Using the custom font in the name wrapper*/
     text-align: center;
     font-size: 50pt;
     margin-top: -5%;
     color: purple;
+    position: relative;
 }
+/* Adjusting the width of images in the imageSection container */
 .imageSection img {
     width: 30%;
 }
-.imageSection img:hover {
-
+/* If you hover over the cookies pic, I dont want it to rotate which is set globally for images, so I have to set it to 0 here */
+.cookiesPic:hover {
+    transform: rotate(0deg);
 }
+/* Creating a container that will organize elements in a row with space around */
 .imageSection {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+/* Creating a container that will orgainze elements in a column */
 .imageArticle {
     display:flex;
     flex-direction: column;
 }
+/* Adjusting the width of an image */
 .sleepyPic {
     width:30%;
 }
+/* Creating a container that will organize elements in a column */
 .contactColumn {
     display: flex;
     flex-direction: column;
     margin-left: 5%; /* Keeps the buttons centered at the bottom and spaced evenly */
     margin-right: 5%;
 }
+/* Creating a container that will organize elements in a row with certain alignment properties */
 .contactRow {
     display: flex;
     flex-direction: row;
@@ -98,6 +128,7 @@ footer img:hover {
     align-items: center;
     justify-content: center;
 }
+/* Adjusting the width of the github logo because it was too big */
 .githubLogo {
     width: 70%;
 }
